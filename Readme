@@ -1,61 +1,61 @@
-## 🌐 My Portfolio Webpage
+🌐 My Portfolio Webpage
 
 Welcome to my personal portfolio website — a digital space that reflects my journey as a **Software Engineer** and **Web Developer**. This site encapsulates my technical expertise, creative projects, and passion for crafting elegant, efficient, and user-centric software solutions.
 
 ---------------------------------------------
 
-### 👩‍💻 About Me
+👩‍💻 About Me
 
-I’m **Yatharth Rahangdale**, a **Bachelor of Engineering (Computer Science & Engineering)** student with a strong academic background and a deep enthusiasm for technology-driven innovation. I’m passionate about transforming ideas into tangible, real-world applications that solve problems and deliver meaningful impact. My focus lies in developing scalable, responsive, and performance-optimized web applications using modern tools and technologies.
-
----------------------------------------------
-
-### ⚙️ Key Features
-
-* **Fully Responsive Design** — Optimized for seamless viewing across all devices.
-* **Project Showcase** — Highlighting my most impactful academic and personal projects.
-* **Technical Skills Overview** — A concise display of my programming and development proficiencies.
-* **Interactive Contact Section** — Includes a form and direct contact information for easy communication.
+I’m Yatharth Rahangdale, a Bachelor of Engineering (Computer Science & Engineering) student with a strong academic background and a deep enthusiasm for technology-driven innovation. I’m passionate about transforming ideas into tangible, real-world applications that solve problems and deliver meaningful impact. My focus lies in developing scalable, responsive, and performance-optimized web applications using modern tools and technologies.
 
 ---------------------------------------------
 
-### 🧩 Technologies Utilized
+⚙️ Key Features
 
-* **Frontend:** HTML, CSS, JavaScript
-* **Backend:** PHP (basic exposure)
-* **Database:** MySQL,PhpMyAdmin
-* **Version Control:** Git, GitHub
+Fully Responsive Design — Optimized for seamless viewing across all devices.
+Project Showcase — Highlighting my most impactful academic and personal projects.
+Technical Skills Overview — A concise display of my programming and development proficiencies.
+Interactive Contact Section — Includes a form and direct contact information for easy communication.
 
 ---------------------------------------------
 
-### 💼 Projects
+🧩 Technologies Utilized
 
-**1. Diploma Paper Hub**
+Frontend: HTML, CSS, JavaScript
+Backend: PHP (basic exposure)
+Database: MySQL,PhpMyAdmin
+Version Control: Git, GitHub
+
+---------------------------------------------
+
+💼 Projects
+
+1. Diploma Paper Hub
 A web-based platform designed to streamline the PaperHub for Diploma Students  within academic institutions.
-**Tech Stack:** HTML, CSS, JavaScript,Php
+Tech Stack: HTML, CSS, JavaScript,Php
 
-**2. Personal Portfolio Website**
+2. Personal Portfolio Website
 A responsive and visually appealing portfolio website designed to present my professional profile, skills, and projects.
-**Tech Stack:** HTML, CSS,JavaScript,Php
+Tech Stack: HTML, CSS,JavaScript,Php
 
-**3. Jdiet Paper Hub**
+3. Jdiet Paper Hub
 A web-based platform designed to streamline the PaperHub for Engineering Students within academic institutions.
-**Tech Stack:** HTML, CSS, JavaScript,Php
+Tech Stack: HTML, CSS, JavaScript,Php
 
 ---------------------------------------------
 
-### 🛠️ Technical Skills
+🛠️ Technical Skills
 
-* **Programming Languages:** C, C++, Python, Java
-* **Web Development:** HTML, CSS, JavaScript, PHP
-* **Database Management:** MySQL,Oracle
-* **Tools & Platforms:** Git, GitHub, VS Code
+Programming Languages: C, C++, Python, Java
+Web Development: HTML, CSS, JavaScript, PHP
+Database Management: MySQL,Oracle
+Tools & Platforms: Git, GitHub, VS Code
 
 ---------------------------------------------
 
-### 🧑‍💼 Internships
+🧑‍💼 Internships
 
-**Symphonix IT** — *Web Development Intern*
+Symphonix IT — Web Development Intern
 Developed responsive user interfaces and dynamic webpages using HTML, CSS, and JavaScript.
 
 **ExcelR** — *Full Stack Development Intern*
@@ -63,7 +63,7 @@ Gained hands-on experience in end-to-end web application development using moder
 
 ---------------------------------------------
 
-### 📬 Contact Information
+📬 Contact Information
 
 📧 **Email:** [yathartharahangdale@gmail.com](mailto:yathartharahangdale@gmail.com)
 📞 **Phone:** +91 9156240822
@@ -71,14 +71,14 @@ Gained hands-on experience in end-to-end web application development using moder
 
 ---------------------------------------------
 
-### 🌍 Live Demo
+🌍 Live Demo
 
 Experience my portfolio in action:
-🔗 [**Live Portfolio Demo**](https://github.com/yathartharahangdale/My_portfolio)
+🔗 [Live Portfolio Demo](https://github.com/yathartharahangdale/My_portfolio)
 
 ---------------------------------------------
 
-### 🚀 Getting Started
+🚀 Getting Started
 
 To explore the source code, simply clone the repository and open the **index.html** file in your preferred web browser.
 
