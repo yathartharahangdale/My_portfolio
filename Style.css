@@ -1,0 +1,496 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #242424;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 10px;
+  padding-left: 500px;
+  padding-top: 20px;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+section {
+  min-height: 80vh;
+  padding-top: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 50px 50px 80px;
+  background-color: black;
+}
+
+.content h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.content h3 {
+  font-size: 28px;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff004f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e60045;
+}
+
+.image-container img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 6px solid #413f3f;
+  object-fit: cover;
+}
+
+.typing {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgb(155, 16, 16);
+  font-size: 28px;
+  color: #00ffc8;
+  width: 0;
+  display: inline-block;
+  position: relative;
+  line-height: 20px;
+  animation: typing 3s steps(25, end) infinite alternate, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 25ch;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#Profile {
+  padding: 30px;
+  padding-top: 60px;
+}
+
+#Profile .pft {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.pft .img {
+  padding-top: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  margin: 30px;
+  flex-basis: 30%;
+}
+
+.img img {
+  border-radius: 130px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.pft .intro {
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-right: 150px;
+  flex-basis: 70%;
+}
+
+.intro p {
+  font-family: sans-serif;
+  font-size: 15px;
+  word-spacing: 3px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+}
+
+h4 {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  place-items: center;
+}
+
+.projt {
+  display: flex;
+  padding: 30px;
+  background-color: rgb(22, 21, 22);
+  color: white;
+}
+
+.projt .pjt {
+  padding: 30px;
+  margin: 30px;
+  width: 400px;
+  align-content: justify;
+  background-color: rgb(39, 38, 40);
+  color: white;
+  border-radius: 20px;
+  place-items: center;
+  text-align: center;
+  transition-property: hover;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.pjt:hover {
+  background:rgb(80, 64, 103);
+  width: 500px;
+  height: 220px;
+}
+
+.pjt img {
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+}
+
+#project {
+  background-color: rgb(22, 21, 22);
+  color: white;
+}
+
+#intership {
+  background-color: rgb(22, 21, 22);
+  color: white;
+}
+
+.intern {
+  display: flex;
+  padding: 30px;
+}
+
+.intern_dtl {
+  width: 400px;
+  padding: 30px;
+  margin: 30px;
+  align-content: justify;
+  background-color: rgb(38, 38, 40);
+  color: white;
+  border-radius: 30px;
+  place-items: center;
+  text-align: center;
+  transition-property: hover;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.intern_dtl:hover {
+  background: rgb(80, 64, 103);
+  width: 500px;
+  height: 220px;
+}
+
+.intern_dtl img {
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+}
+
+footer {
+  background-color: #242424;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+table tr td {
+  padding: 10px;
+}
+
+.sk {
+  display: flex;
+}
+
+.sk_ds {
+  font-family: sans-serif;
+  font-size: 15px;
+  word-spacing: 3px;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 30px;
+  margin-right: 70px;
+}
+
+.skill_dtl {
+  padding-left: 40px;
+  padding: 10px;
+  padding-top: 50px;
+}
+
+.skill_dtl .pb {
+  display: flex;
+  padding: 10px;
+}
+
+.skill_dtl progress {
+  margin-right: 20px;
+  width: 500px;
+  height: 8px;
+  border: none;
+  background-color: #ccc;
+}
+
+progress::-webkit-progress-value {
+  background-color: #c12a24;
+}
+
+progress::-moz-progress-bar {
+  background-color: #4CAF50;
+}
+
+#project #p {
+  color: white;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#p {
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.cnt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cnt_dt,
+.message {
+  background-color: #848181fc;
+  padding: 15px;
+  padding-bottom: 0px;
+  padding-top: 5px;
+  border-radius: 10px;
+  width: 300px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.cnt_dt table td {
+  padding: 13px;
+  color: white;
+}
+
+.message input,
+.message textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.message input[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.message input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+.message #submit{
+ margin-top:1px;
+ margin-bottom:1px;
+}
+
+.sk {
+  padding-left: 550px;
+  padding-top: 250px;
+  margin: 20px;
+}
+
+.circle-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.circle-container img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.image1 {
+  animation: orbit 10s linear infinite;
+  transform: rotate(0deg) translate(200px) rotate(0deg);
+}
+
+.image2 {
+  animation: orbit 10s linear infinite;
+  animation-delay: 1s;
+  transform: rotate(36deg) translate(200px) rotate(-36deg);
+}
+
+.image3 {
+  animation: orbit 10s linear infinite;
+  animation-delay: 2s;
+  transform: rotate(72deg) translate(200px) rotate(-72deg);
+}
+
+.image4 {
+  animation: orbit 10s linear infinite;
+  animation-delay: 3s;
+  transform: rotate(108deg) translate(200px) rotate(-108deg);
+}
+
+.image5 {
+  animation: orbit 10s linear infinite;
+  animation-delay: 4s;
+  transform: rotate(144deg) translate(200px) rotate(-144deg);
+}
+
+.image6 {
+  animation: orbit 10s linear infinite;
+  animation-delay: 5s;
+  transform: rotate(180deg) translate(200px) rotate(-180deg);
+}
+
+.image7 {
+  animation: orbit 10s linear infinite;
+  animation-delay: 6s;
+  transform: rotate(216deg) translate(200px) rotate(-216deg);
+}
+
+.image8 {
+  animation: orbit 10s linear infinite;
+  animation-delay: 7s;
+  transform: rotate(252deg) translate(200px) rotate(-252deg);
+}
+
+.image9 {
+  animation: orbit 10s linear infinite;
+  animation-delay: 8s;
+  transform: rotate(288deg) translate(200px) rotate(-288deg);
+}
+
+.image10 {
+  animation: orbit 10s linear infinite;
+  animation-delay: 9s;
+  transform: rotate(324deg) translate(200px) rotate(-324deg);
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(200px) rotate(-360deg);
+  }
+}
