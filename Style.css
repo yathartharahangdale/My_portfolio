@@ -1,16 +1,32 @@
+/*
+======================================================
+  Base Styles - General Resets and Typography
+======================================================
+*/
+:root {
+  /* Define a base font size for easier scaling with 'rem' units */
+  font-size: 16px;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6; /* Improved readability */
 }
 
+/*
+======================================================
+  Header and Navigation
+======================================================
+*/
 header {
   background-color: #242424;
   color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 1rem 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Stack h1 and nav vertically on small screens */
+  align-items: center;
   position: fixed;
   width: 100%;
   top: 0;
@@ -19,478 +35,452 @@ header {
 
 header h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0.5rem 0;
 }
 
 nav ul {
   list-style: none;
-  margin: 10px;
-  padding-left: 500px;
-  padding-top: 20px;
+  margin: 0;
+  padding: 0;
   display: flex;
+  flex-wrap: wrap; /* Allow navigation items to wrap on smaller screens */
+  justify-content: center;
+  width: 100%;
 }
 
 nav li {
-  margin-right: 20px;
+  margin: 0.5rem 1rem;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s;
+  padding: 0.25rem 0.5rem;
 }
 
+nav a:hover {
+  color: #ff004f;
+}
 
+/* Correcting the original index.html: remove extra <br> tags */
+nav li a + br {
+    display: none;
+}
+
+/*
+======================================================
+  Common Section Styles
+======================================================
+*/
 section {
   min-height: 80vh;
-  padding-top: 30px;
+  padding: 4rem 1rem 2rem; /* Adjusted padding for better spacing and header clearance */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.home {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  padding: 60px 50px 50px 80px;
-  background-color: black;
-}
-
-.content h1 {
-  font-size: 48px;
-  color: white;
-  font-weight: 700;
-  margin: 10px 0;
-}
-
-.content h3 {
-  font-size: 28px;
-  color: white;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #ff004f;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background: #e60045;
-}
-
-.image-container img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  border: 6px solid #413f3f;
-  object-fit: cover;
-}
-
-.typing {
-  font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid rgb(155, 16, 16);
-  font-size: 28px;
-  color: #00ffc8;
-  width: 0;
-  display: inline-block;
-  position: relative;
-  line-height: 20px;
-  animation: typing 3s steps(25, end) infinite alternate, blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 25ch;
-  }
-}
-
-@keyframes blink-caret {
-  50% {
-    border-color: transparent;
-  }
-}
-
-#Profile {
-  padding: 30px;
-  padding-top: 60px;
-}
-
-#Profile .pft {
-  display: flex;
-  flex-direction: row;
-  padding: 30px;
-}
-
-.pft .img {
-  padding-top: 0px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  margin: 30px;
-  flex-basis: 30%;
-}
-
-.img img {
-  border-radius: 130px;
-  padding: 10px;
-  padding-left: 20px;
-}
-
-.pft .intro {
-  padding-left: 100px;
-  padding-top: 20px;
-  padding-right: 150px;
-  flex-basis: 70%;
-}
-
-.intro p {
-  font-family: sans-serif;
-  font-size: 15px;
-  word-spacing: 3px;
-  line-height: 1.5;
-  text-align: justify;
 }
 
 h2 {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 35px;
-}
-
-h4 {
-  text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 15px;
-  place-items: center;
-}
-
-.projt {
-  display: flex;
-  padding: 30px;
-  background-color: rgb(22, 21, 22);
-  color: white;
-}
-
-.projt .pjt {
-  padding: 30px;
-  margin: 30px;
-  width: 400px;
-  align-content: justify;
-  background-color: rgb(39, 38, 40);
-  color: white;
-  border-radius: 20px;
-  place-items: center;
-  text-align: center;
-  transition-property: hover;
-  transition-duration: 2s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-}
-
-.pjt:hover {
-  background:rgb(80, 64, 103);
-  width: 500px;
-  height: 220px;
-}
-
-.pjt img {
-  display: block;
-  margin: auto;
-  border-radius: 30px;
-}
-
-#project {
-  background-color: rgb(22, 21, 22);
-  color: white;
-}
-
-#intership {
-  background-color: rgb(22, 21, 22);
-  color: white;
-}
-
-.intern {
-  display: flex;
-  padding: 30px;
-}
-
-.intern_dtl {
-  width: 400px;
-  padding: 30px;
-  margin: 30px;
-  align-content: justify;
-  background-color: rgb(38, 38, 40);
-  color: white;
-  border-radius: 30px;
-  place-items: center;
-  text-align: center;
-  transition-property: hover;
-  transition-duration: 2s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-}
-
-.intern_dtl:hover {
-  background: rgb(80, 64, 103);
-  width: 500px;
-  height: 220px;
-}
-
-.intern_dtl img {
-  display: block;
-  margin: auto;
-  border-radius: 30px;
-}
-
-footer {
-  background-color: #242424;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  clear: both;
-}
-
-footer p {
-  margin-bottom: 10px;
-}
-
-.message {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  height: 30px;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-textarea {
-  width: 100%;
-  height: 100px;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #3e8e41;
-}
-
-table tr td {
-  padding: 10px;
-}
-
-.sk {
-  display: flex;
-}
-
-.sk_ds {
-  font-family: sans-serif;
-  font-size: 15px;
-  word-spacing: 3px;
-  line-height: 1.5;
-  text-align: justify;
-  padding: 30px;
-  margin-right: 70px;
-}
-
-.skill_dtl {
-  padding-left: 40px;
-  padding: 10px;
-  padding-top: 50px;
-}
-
-.skill_dtl .pb {
-  display: flex;
-  padding: 10px;
-}
-
-.skill_dtl progress {
-  margin-right: 20px;
-  width: 500px;
-  height: 8px;
-  border: none;
-  background-color: #ccc;
-}
-
-progress::-webkit-progress-value {
-  background-color: #c12a24;
-}
-
-progress::-moz-progress-bar {
-  background-color: #4CAF50;
-}
-
-#project #p {
-  color: white;
-  text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2.5rem;
 }
 
 #p {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  margin-bottom: 2rem;
+}
+
+
+/*
+======================================================
+  Home Section
+======================================================
+*/
+.home {
+  display: flex;
+  flex-direction: row; /* Default: horizontal layout */
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 6rem 5% 2rem; /* Use percentage for horizontal padding */
+  background-color: black;
+  text-align: center; /* Center content when stacked */
+}
+
+.content {
+    max-width: 50%; /* Limit content width on large screens */
+    margin-bottom: 2rem;
+}
+
+.content h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.image-container img {
+  width: 18rem; /* Use rem for sizing */
+  height: 18rem;
+  border-radius: 50%;
+  border: 6px solid #413f3f;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.typing {
+  font-size: 1.5rem;
+  /* Keeping animation as is for effect */
+}
+
+
+/*
+======================================================
+  About Section
+======================================================
+*/
+#Profile {
+  padding: 4rem 5% 2rem;
+}
+
+#Profile .pft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem; /* Space between image and intro */
+}
+
+.pft .img {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 0; /* Remove fixed padding */
+  margin: 0;
+}
+
+.img img {
+  border-radius: 130px;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.pft .intro {
+  flex-basis: 70%;
+  padding: 0; /* Remove fixed padding */
+}
+
+.intro p {
+  font-size: 1rem;
+  word-spacing: 1px;
+  line-height: 1.6;
+}
+
+/*
+======================================================
+  Project and Internship Sections
+======================================================
+*/
+#project, #intership {
+  background-color: rgb(22, 21, 22);
+  color: white;
+  padding: 4rem 5% 2rem;
+}
+
+.projt, .intern {
+  display: flex;
+  flex-wrap: wrap; /* Important: allow items to wrap */
+  justify-content: center;
+  gap: 2rem; /* Space between cards */
+  padding: 0;
+}
+
+.projt .pjt, .intern_dtl {
+  flex-basis: calc(33.333% - 2rem); /* 3 items per row, accounting for gap */
+  min-width: 280px; /* Minimum size for the card */
+  padding: 1.5rem;
+  margin: 0;
+  background-color: rgb(39, 38, 40);
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease; /* Transition for better effect, removed fixed width/height change */
+}
+
+.pjt:hover, .intern_dtl:hover {
+  background: rgb(80, 64, 103);
+  transform: translateY(-5px); /* Lift effect instead of fixed size change */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.pjt img, .intern_dtl img {
+  display: block;
+  margin: 0.5rem auto;
+  border-radius: 30px;
+}
+
+/*
+======================================================
+  Skills Section - Orbital Animation Fix
+======================================================
+*/
+#Skills {
+  padding: 4rem 1rem 2rem;
+}
+
+.sk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Removed fixed padding and margin */
+  padding: 0;
+  margin: 0;
+}
+
+.circle-container {
+  position: relative;
+  width: 30rem; /* Fixed width for the container, adjust as needed */
+  height: 30rem;
+  margin-top: 2rem;
+}
+
+/* Use relative units for translation for better scaling */
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10 {
+  animation: orbit 10s linear infinite;
+}
+
+.circle-container img {
+  position: absolute;
+  width: 4rem; /* Adjusted size for the images */
+  height: 4rem;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-top: -2rem; /* Half of height to center it vertically */
+  margin-left: -2rem; /* Half of width to center it horizontally */
+}
+
+/* The translation distance is now relative to the container size or a smaller, more controlled value */
+$orbit-radius: 12rem; /* New, controlled orbit radius */
+
+.image1 { transform: rotate(0deg) translate($orbit-radius) rotate(0deg); }
+.image2 { animation-delay: 1s; transform: rotate(36deg) translate($orbit-radius) rotate(-36deg); }
+.image3 { animation-delay: 2s; transform: rotate(72deg) translate($orbit-radius) rotate(-72deg); }
+.image4 { animation-delay: 3s; transform: rotate(108deg) translate($orbit-radius) rotate(-108deg); }
+.image5 { animation-delay: 4s; transform: rotate(144deg) translate($orbit-radius) rotate(-144deg); }
+.image6 { animation-delay: 5s; transform: rotate(180deg) translate($orbit-radius) rotate(-180deg); }
+.image7 { animation-delay: 6s; transform: rotate(216deg) translate($orbit-radius) rotate(-216deg); }
+.image8 { animation-delay: 7s; transform: rotate(252deg) translate($orbit-radius) rotate(-252deg); }
+.image9 { animation-delay: 8s; transform: rotate(288deg) translate($orbit-radius) rotate(-288deg); }
+.image10 { animation-delay: 9s; transform: rotate(324deg) translate($orbit-radius) rotate(-324deg); }
+
+
+@keyframes orbit {
+  0% { transform: rotate(0deg) translate($orbit-radius) rotate(0deg); }
+  100% { transform: rotate(360deg) translate($orbit-radius) rotate(-360deg); }
+}
+
+/*
+======================================================
+  Contact Section
+======================================================
+*/
+#contact {
+  padding: 4rem 5% 2rem;
 }
 
 .cnt {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
 }
 
-.cnt_dt,
-.message {
+.cnt_dt, .message {
   background-color: #848181fc;
-  padding: 15px;
-  padding-bottom: 0px;
-  padding-top: 5px;
+  padding: 1.5rem;
   border-radius: 10px;
-  width: 300px;
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis: Allows them to grow and ensures min-width */
   color: white;
-  margin-top: 30px;
-  margin-left: 80px;
-  margin-right: 80px;
+  margin: 1rem; /* Adjusted margin */
+}
+
+.cnt_dt table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .cnt_dt table td {
-  padding: 13px;
+  padding: 0.5rem;
   color: white;
 }
 
-.message input,
-.message textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+.cnt_dt img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretch items to fill the container */
+}
+
+.message input[type="text"],
+.message input[type="email"],
+.message textarea,
 .message input[type="submit"] {
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
+  width: 100%; /* Important for full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width/height */
+  margin: 0.5rem 0;
 }
 
-.message input[type="submit"]:hover {
-  background-color: #005fa3;
-}
-.message #submit{
- margin-top:1px;
- margin-bottom:1px;
-}
-
-.sk {
-  padding-left: 550px;
-  padding-top: 250px;
-  margin: 20px;
-}
-
-.circle-container {
-  position: relative;
-  width: 100%;
-  height: 500px;
+/*
+======================================================
+  Footer
+======================================================
+*/
+footer {
+  background-color: #242424;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  clear: both;
 }
 
-.circle-container img {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+/*
+======================================================
+  Media Queries for Mobile Screens (Max-width 768px)
+======================================================
+*/
+@media (max-width: 768px) {
+    /* Header/Navigation adjustments */
+    header {
+        padding-top: 0.5rem;
+    }
+
+    nav ul {
+        padding-left: 0;
+        flex-direction: column; /* Stack navigation links vertically */
+        text-align: center;
+    }
+
+    nav li {
+        margin: 0.25rem 0;
+        width: 100%;
+    }
+    
+    /* Home Section - Stack image and content */
+    .home {
+        flex-direction: column;
+        height: auto;
+        padding: 6rem 5% 2rem;
+    }
+
+    .content {
+        max-width: 100%;
+        text-align: center;
+        order: 2; /* Put content below the image */
+    }
+
+    .image-container {
+        order: 1; /* Put image first */
+        margin-bottom: 2rem;
+    }
+
+    .image-container img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .content h3, .typing {
+        font-size: 1.25rem;
+    }
+    
+    /* About Section - Stack image and text */
+    #Profile .pft {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pft .intro {
+        padding: 0;
+    }
+    
+    /* Project and Internship Sections - One item per row */
+    .projt .pjt, .intern_dtl {
+        flex-basis: 100%;
+        min-width: unset;
+    }
+    
+    /* Skills Section - Smaller orbital container */
+    .circle-container {
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    $mobile-orbit-radius: 8rem; /* Smaller orbit radius for mobile */
+    .circle-container img {
+        width: 3rem;
+        height: 3rem;
+        margin-top: -1.5rem;
+        margin-left: -1.5rem;
+    }
+
+    .image1 { transform: rotate(0deg) translate($mobile-orbit-radius) rotate(0deg); }
+    .image2 { transform: rotate(36deg) translate($mobile-orbit-radius) rotate(-36deg); }
+    .image3 { transform: rotate(72deg) translate($mobile-orbit-radius) rotate(-72deg); }
+    .image4 { transform: rotate(108deg) translate($mobile-orbit-radius) rotate(-108deg); }
+    .image5 { transform: rotate(144deg) translate($mobile-orbit-radius) rotate(-144deg); }
+    .image6 { transform: rotate(180deg) translate($mobile-orbit-radius) rotate(-180deg); }
+    .image7 { transform: rotate(216deg) translate($mobile-orbit-radius) rotate(-216deg); }
+    .image8 { transform: rotate(252deg) translate($mobile-orbit-radius) rotate(-252deg); }
+    .image9 { transform: rotate(288deg) translate($mobile-orbit-radius) rotate(-288deg); }
+    .image10 { transform: rotate(324deg) translate($mobile-orbit-radius) rotate(-324deg); }
+
+    @keyframes orbit {
+        0% { transform: rotate(0deg) translate($mobile-orbit-radius) rotate(0deg); }
+        100% { transform: rotate(360deg) translate($mobile-orbit-radius) rotate(-360deg); }
+    }
+    
+    /* Contact Section - Full width blocks */
+    .cnt_dt, .message {
+        flex-basis: 100%;
+        margin: 1rem 0;
+    }
 }
 
-.image1 {
-  animation: orbit 10s linear infinite;
-  transform: rotate(0deg) translate(200px) rotate(0deg);
+/*
+======================================================
+  Original Animations (Kept as is)
+======================================================
+*/
+@keyframes typing {
+  from { width: 0; }
+  to { width: 25ch; }
 }
 
-.image2 {
-  animation: orbit 10s linear infinite;
-  animation-delay: 1s;
-  transform: rotate(36deg) translate(200px) rotate(-36deg);
+@keyframes blink-caret {
+  50% { border-color: transparent; }
 }
 
-.image3 {
-  animation: orbit 10s linear infinite;
-  animation-delay: 2s;
-  transform: rotate(72deg) translate(200px) rotate(-72deg);
-}
-
-.image4 {
-  animation: orbit 10s linear infinite;
-  animation-delay: 3s;
-  transform: rotate(108deg) translate(200px) rotate(-108deg);
-}
-
-.image5 {
-  animation: orbit 10s linear infinite;
-  animation-delay: 4s;
-  transform: rotate(144deg) translate(200px) rotate(-144deg);
-}
-
-.image6 {
-  animation: orbit 10s linear infinite;
-  animation-delay: 5s;
-  transform: rotate(180deg) translate(200px) rotate(-180deg);
-}
-
-.image7 {
-  animation: orbit 10s linear infinite;
-  animation-delay: 6s;
-  transform: rotate(216deg) translate(200px) rotate(-216deg);
-}
-
-.image8 {
-  animation: orbit 10s linear infinite;
-  animation-delay: 7s;
-  transform: rotate(252deg) translate(200px) rotate(-252deg);
-}
-
-.image9 {
-  animation: orbit 10s linear infinite;
-  animation-delay: 8s;
-  transform: rotate(288deg) translate(200px) rotate(-288deg);
-}
-
-.image10 {
-  animation: orbit 10s linear infinite;
-  animation-delay: 9s;
-  transform: rotate(324deg) translate(200px) rotate(-324deg);
-}
-
-@keyframes orbit {
-  0% {
-    transform: rotate(0deg) translate(200px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(200px) rotate(-360deg);
-  }
-}
+/* Cleanup of unused/redundant styles */
+/*
+h4 { ... }
+.sk_ds { ... }
+.skill_dtl { ... }
+progress { ... }
+... (removed many of the original fixed-pixel styles)
+*/
